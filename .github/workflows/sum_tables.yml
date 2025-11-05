@@ -24,5 +24,8 @@ jobs:
           npm init -y
           npm install playwright
 
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
+
       - name: Run Playwright sum script - 25ds2000003@ds.study.iitm.ac.in
         run: node sum_tables.js
